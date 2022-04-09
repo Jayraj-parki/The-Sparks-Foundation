@@ -41,7 +41,7 @@ export default function Transfer() {
         else {
 
             try {
-
+                const date = new Date(Date.now()).toString()
                 const result = await fetch((`/addTransaction/`), {
                     method: "POST",
                     headers: {
@@ -55,7 +55,9 @@ export default function Transfer() {
                         recieverBal: +activeReciever?.balance,
                         reciever,
                         amount,
-                        status: "success"
+                        status: "success",
+
+                        date
                     })
                 })
                 const data = await result.json();

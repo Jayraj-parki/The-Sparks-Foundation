@@ -36,8 +36,8 @@ app.get("/getAllCustomer", async (req, res) => {
 
 // transactions
 app.post("/addTransaction", async (req, res) => {
-    const { sender, senderName, recieverName, senderBal, recieverBal, reciever, amount, status } = req.body;
-    const date = new Date(Date.now()).toString()
+    const { sender,date, senderName, recieverName, senderBal, recieverBal, reciever, amount, status } = req.body;
+    
     try {
         if (status == "success" && senderBal >= amount) {
             const result = new Transaction({
