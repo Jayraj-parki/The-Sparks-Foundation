@@ -1,0 +1,39 @@
+.transfer_money{
+    background-color: #e67e22;
+    h3{
+        color: #ecf0f1;
+    }
+    .wrapper{
+        .alert{
+            border-radius: 10px;
+        }
+        .sender,.reciever,.amountToPay{
+            border-radius: 20px;
+            background-color: #ffeaa7;
+            // box-shadow: 0px 0px 5px .2px #5e5e5e;
+        }
+        .amountToPay{
+            background-color: #ecf0f1;
+            color: #2d3436;
+            box-shadow: none;
+        }
+        .confirm{
+            button{
+
+                background-color: #2d3436;
+                color: #ecf0f1;
+                outline: none;
+                border: none;
+                border-radius: 20px;
+                &:hover{
+                    background-color: #00b894;
+                }
+                &:active{
+                    background-color: #fdcb6e;
+                    color: #2c3e50;
+                }
+            
+            }
+        }
+    }
+}

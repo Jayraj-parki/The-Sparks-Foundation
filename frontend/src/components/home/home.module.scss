@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Poppins:wght@500;600;700&display=swap");
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+.home {
+    background-color: #ecf0f1;
+    .main {
+        height: 80vh;
+        // background-color: #e74c3c;
+        background: linear-gradient(to right, #ffeaa7 60%, #fdcb6e 30%);
+        .navbar {
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .logo {
+                font-family: "Beau Rivage", cursive;
+                font-size: 40px;
+                text-transform: capitalize;
+                text-decoration: none;
+                color: #2d3436;
+                font-weight: 500;
+            }
+            h3 {
+                font-weight: 20px;
+                // border: 2px solid red;
+                border-radius: 10px;
+                background-color: #ffeaa7;
+            }
+        }
+        .content {
+            height: inherit;
+            .left {
+                color: #2c3e50;
+                h1{
+                    &:first-child{
+                        font-weight: 900;
+                    }
+                }
+            }
+            .right {
+                img {
+                    // filter: brightness(60%);
+                    border-radius: 20px;
+                }
+            }
+        }
+    }
+    
+    .footer{
+        background-color: #fdcb6e;
+    }
+}

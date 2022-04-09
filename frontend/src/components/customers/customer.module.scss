@@ -1,0 +1,35 @@
+.customer{
+    background-color: #e67e22;
+    h3{
+        color: #ecf0f1;
+    }
+    .wrapper{
+        .alert{
+            border-radius: 20px;
+        }
+        .content{
+            border-radius: 20px;
+            background-color: #ffeaa7;
+           table{
+               .status_success{
+                   color: #00b894;
+               }
+               .status_failed{
+                   color:red
+               }
+               span{
+                   cursor: pointer;
+                   color: #2980b9;
+               }
+               thead{
+                   tr{
+                       th{
+                           color: #e67e22;
+                       }
+                   }
+               }
+           }
+        }
+        
+    }
+}
