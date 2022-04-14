@@ -93,13 +93,13 @@ export default function Transfer() {
     }, [reciever,user])
     return (
         <div id="transfer" className={style.transfer_money + " row col-12 mx-auto py-3 pb-5 "}>
-            <h3 className='  col-auto mx-auto border-light border-bottom pb-2'>QuickPay Money Transfer</h3>
+            <h3 className='  col-12 text-center mx-auto border-light border-bottom pb-2'>QuickPay Money Transfer</h3>
             <div className={style.wrapper + " row col-9 mx-auto  p-0 d-flex justify-content-between align-items-center"}>
                 <div className={style.alert + " alert alert-warning my-2 mb-4"} role="alert">
                     Transfer Money thorught QuickPay
                 </div>
 
-                <div className={style.sender + "  col-4  px-4 py-3 m-0"}>
+                <div className={style.sender + "  col-md-4  px-4 py-3   m-0"}>
                     <select value={sender} onChange={(e) => setSender(e.target.value)} className='form-select row col-12 mx-auto ' name="" id="">
                         <option value="Select a sender" selected disabled>Select a Sender</option>
                         {
@@ -124,13 +124,13 @@ export default function Transfer() {
                         </table>
                     </div>
                 </div>
-                <div className={style.amountToPay + " col-3  px-4 py-3"}>
+                <div className={style.amountToPay + " col-md-3 my-md-0 my-2  px-4 py-3"}>
                     <div className="mb-3">
                         <label for="amount" className="form-label">Enter amount to Transfer</label>
                         <input name="amt" value={amount} onChange={(e) => setAmount(e.target.value)} className="form-control" type="Number" id="amount" placeholder='Amount' />
                     </div>
                 </div>
-                <div className={style.reciever + " col-4  px-4 py-3"}>
+                <div className={style.reciever + " col-md-4  px-4 py-3"}>
                     <select value={reciever} onChange={(e) => setReciever(e.target.value)} className='form-select row col-12 mx-auto ' name="" id="">
                         <option value="Select a reciever" selected disabled>Select a Reciever</option>
                         {
@@ -155,7 +155,7 @@ export default function Transfer() {
                         </table>
                     </div>
                 </div>
-                <div className={style.confirm + " col-3  p-0 mx-auto "}>
+                <div className={style.confirm + " col-md-3  p-0 mx-auto my-2"}>
                     <button onClick={transferMoney} className={"row col-12 mx-auto px-3 py-2   d-flex justify-content-center "}>Transfer Money</button>
                 </div>
             </div>

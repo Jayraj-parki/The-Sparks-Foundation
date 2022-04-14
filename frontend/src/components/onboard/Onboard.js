@@ -11,12 +11,12 @@ export default function Onboard() {
     }
     return ( 
         <>
-            <div className={style.onboard + ' row col-9 mx-auto px-3'}>
+            <div className={style.onboard + ' row col-lg-9 mx-auto px-3'}>
                 <div className={style.content + " row col-12 mx-auto my-3"}>
-                    <div className={style.image + " col-6 p-2 d-flex"}>
+                    <div className={style.image + " col-md-6 p-2 d-flex"}>
                         <img src="/images/transfer.png" className='w-100 my-auto' alt="" />
                     </div>
-                    <div className={style.details + " col-6"}>
+                    <div className={style.details + " col-md-6"}>
                         <h1>Transfer money</h1>
                         <p>Hey, do you want to transfer money? </p>
                         <p>User our <span>QuickPay</span> for quick money transfe. click Transfer button to transfer money..!</p>
@@ -24,21 +24,21 @@ export default function Onboard() {
                     </div>
                 </div>
                 <div className={style.content + " row col-12 mx-auto my-3"}>
-                    <div className={style.details + " col-6"}>
+                    <div className={style.details + " col-md-6 order-2 order-md-1"}>
                         <h1>See All Customer</h1>
                         <p>Chekc here all cutomers. </p>
                         <p>You can also see balance of all customers and to check transaction history of specific user you can click on view button...!  </p>
                         <Link smooth to="#customer" onClick={() => changeState(2)} className={style.button + ' px-3 py-2'}>All Customer</Link>
                     </div>
-                    <div className={style.image + " col-6 p-2 d-flex"}>
+                    <div className={style.image + " col-md-6 p-2 d-flex order-1 order-md-2"}>
                         <img src="/images/customer.png" className='w-100 my-auto' alt="" />
                     </div>
                 </div>
                 <div className={style.content + " row col-12 mx-auto my-3"}>
-                    <div className={style.image + " col-6 p-2 d-flex"}>
+                    <div className={style.image + " col-md-6 p-2 d-flex "}>
                         <img src="/images/transaction.webp" className='w-100 my-auto' alt="" />
                     </div>
-                    <div className={style.details + " col-6"}>
+                    <div className={style.details + " col-md-6 "}>
                         <h1>Transaction History</h1>
                         <p>Check Transaction of all Customers here </p>
                         <p>You can check failed or succeed transaction. Also you can filter them based on status of transaction..!</p>

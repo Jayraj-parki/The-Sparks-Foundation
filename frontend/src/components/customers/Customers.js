@@ -91,7 +91,7 @@ export default function Customers() {
                                         </h4>
                                         <h6 className=' px-3'>Avl. Bal.:- {state?.balance}$</h6>
                                     </div>
-                                    <div className="accordion-body">
+                                    <div className={style.accordion_body+ " accordion-body"}>
                                         <table class="table text-center m-0">
                                             <thead>
                                                 <tr>

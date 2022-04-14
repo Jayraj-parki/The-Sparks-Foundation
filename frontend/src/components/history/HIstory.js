@@ -28,7 +28,7 @@ export default function HIstory() {
     return (
         <div id="history" className={style.history + " row col-12 mx-auto py-3 pb-5  "}>
             <h3  className='  col-auto mx-auto border-light border-bottom pb-2'>QuickPay's Overall Transaction History</h3>
-            <div className={style.wrapper + " row col-9 mx-auto  p-0 d-flex justify-content-between align-items-center"}>
+            <div className={style.wrapper + " row col-11 col-md-9 mx-auto  p-0 d-flex justify-content-between align-items-center"}>
                 <div className={style.content + " m-0 mt-2 p-3"}>
                     <table class="table text-center m-0 border-warning">
                         <thead>

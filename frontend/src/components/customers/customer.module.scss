@@ -10,7 +10,10 @@
         .content{
             border-radius: 20px;
             background-color: #ffeaa7;
-           table{
+           .accordion_body{
+               overflow-x: auto;
+           }
+            table{
                .status_success{
                    color: #00b894;
                }
