@@ -7,7 +7,6 @@ const TransactionSchema= mongoose.Schema({
     amount:Number,
     date:{
         type:String,
-        default:new Date( Date.now()).toString()
     },
     status:String,
 })
