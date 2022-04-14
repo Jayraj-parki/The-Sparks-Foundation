@@ -52,7 +52,7 @@ export default function Customers() {
     return (
         <div id="customer" className={style.customer + " row col-12 mx-auto py-2 "}>
             <h3 className='  col-auto mx-auto border-light border-bottom pb-2'>QuickPay's All Cutomer Details</h3>
-            <div className={style.wrapper + " row col-9 mx-auto  p-0 d-flex justify-content-between align-items-center"}>
+            <div className={style.wrapper + " row col-11 col-md-9 mx-auto  p-0 d-flex justify-content-between align-items-center"}>
                 <div className={style.content + " m-0 mt-2 p-3"}>
                     <table className="table text-center m-0 border-warning">
                         <thead>
